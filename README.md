@@ -42,3 +42,26 @@ License
 ----
 The code in this analysis is covered by the `MIT` license 
 
+
+## sessionInfo used for processed of the dataset  
+```r
+R version 3.6.0 (2019-04-26)
+Platform: x86_64-w64-mingw32/x64 (64-bit)
+Running under: Windows 10 x64 (build 17763)
+
+Matrix products: default
+
+locale:
+[1] LC_COLLATE=English_United States.1252  LC_CTYPE=English_United States.1252    LC_MONETARY=English_United States.1252 LC_NUMERIC=C                          
+[5] LC_TIME=English_United States.1252    
+
+attached base packages:
+[1] stats     graphics  grDevices datasets  utils     methods   base     
+
+other attached packages:
+[1] enviPat_2.4   stringr_1.4.0 readr_1.3.1   purrr_0.3.2   readxl_1.3.1  tidyr_0.8.3   dplyr_0.8.1   here_0.1     
+
+loaded via a namespace (and not attached):
+ [1] Rcpp_1.0.1       magrittr_1.5     hms_0.4.2        tidyselect_0.2.5 R6_2.4.0         rlang_0.3.4      rematch_1.0.1    tools_3.6.0      cli_1.1.0        assertthat_0.2.1 rprojroot_1.3-2 
+[12] tibble_2.1.1     crayon_1.3.4     glue_1.3.1       stringi_1.4.3    compiler_3.6.0   pillar_1.3.1     cellranger_1.1.0 backports_1.1.4  renv_0.5.0-120   pkgconfig_2.0.2 
+```
