@@ -1,8 +1,8 @@
 # R scripts used in Manuscript Triebl et al, 2019:
 THE QUANTITATIVE BIAS OF LIPIDOMIC METHODS AND HARMONIZATION OF PLASMA LIPID QUANTITATION
 
-Authors: *Alexander Triebl, Bo Burla, Jayashree Selvalatchmanan, Jeongah Oh, Sock Hwee Tan, Mark Chan, Natalie A. Mellet, Peter J. Meikle, Federico Torta, Markus R. Wenk* 
-Affiliations: *Singapore Lipidomics Incubator, Life Sciences Institute; Department of Biochemistry Yong Loo Lin School of Medicine; National University of Singapore*
+Authors: *Alexander Triebl, Bo Burla, Jayashree Selvalatchmanan, Jeongah Oh, Sock Hwee Tan, Mark Y. Chan, Natalie A. Mellet, Peter J. Meikle, Federico Torta, Markus R. Wenk* 
+Affiliations of main authors: *Singapore Lipidomics Incubator, Life Sciences Institute; Department of Biochemistry Yong Loo Lin School of Medicine; National University of Singapore*
 
 ## Summary
 This repository contains the R scripts that were used to read the Thermo Xcalibur Export file (XLS, i.e. containing peak areas) from the HILIC LC/MS analysis and to perform correction for M+2 isotopic interference. 
@@ -15,18 +15,17 @@ By default, the dependencies for this project are managed using [renv](https://r
 ```r
 renv::restore()
 ```
-Should you prefer to use your local R library instead, you can turn packrat off via following command: 
+Should you prefer to use your local R library instead, you can turn renv off via following command: 
 ```r
 renv::deactivate() 
 ```
 
 ## Directory Structure
-
-* `Root` Contains script Triebl_2019_HILIC_Data_Convert_IsotopeCorrection.R that performs the analysis using functions defined in scripts located in subfolder R/
-* `R/` Contains R scripts with functions for import of Xcalibur XLS result export files, isotopic correction and helper functions
-* `data/` Contains the original Xcalibur XLS export (`HILIC_QE_analysis_Xcalib-ShortFormatExport.XLS`) 
-* `output/`  Contain the output of script Triebl_2019_HILIC_Data_Convert_IsotopeCorrection.R
-* `renv/`  Contains copies of the packages used by this project and other renv related files 
+* `Root` Script Triebl_2019_HILIC_Data_Convert_IsotopeCorrection.R that performs the analysis using functions defined in scripts located in subfolder R/
+* `R/` R scripts with functions for import of Xcalibur XLS result export files, isotopic correction and helper functions
+* `data/` Original Xcalibur XLS export (`HILIC_QE_analysis_Xcalib-ShortFormatExport.XLS`) 
+* `output/`  Output of script Triebl_2019_HILIC_Data_Convert_IsotopeCorrection.R
+* `renv/`  Copies of the packages used by this project and other renv related files 
 
 ## Running the Analysis
 * Open and run the R script `Triebl_2019_HILIC_Data_Convert_IsotopeCorrection.R` 
