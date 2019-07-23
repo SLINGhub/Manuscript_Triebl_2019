@@ -20,4 +20,4 @@ d_QE <- convert_XcaliburXLS(XcalibXLS_filepath = data_filepath, NA_to_Zero = TRU
 d_QE_withIsoCor <- lipid_deisotoper(d_QE)
 
 d_QE_isocor_Area_wide <- d_QE_withIsoCor %>% select(AnalysisID, Compound, Area_Corrected) %>% spread(key = Compound, value = Area_Corrected)
-write_csv(d_QE_isocor_Area_wide,path = here("output//HILIC_QE_analysis_M2Corrected_Area-8.csv"))
+write_csv(d_QE_isocor_Area_wide,path = here("output/HILIC_QE_analysis_M2Corrected_Area.csv"))
